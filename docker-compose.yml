@@ -9,4 +9,7 @@ services:
     environment:
       - GENERIC_TIMEZONE=America/New_York
       - TZ=America/New_York
+     volumes:
+      # persistent data for workflows & credentials
+      - ./data:/home/node/.n8n     
     restart: unless-stopped
