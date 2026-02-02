@@ -1,0 +1,5 @@
+# ignore data folder (working directory)
+data/*
+
+# keep the data folder itself
+!data/

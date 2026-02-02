@@ -25,6 +25,12 @@ git clone <your-repo-url>
 cd <repo-folder>
 ```
 
+### - Fix working folder ownership issue
+```bash
+cd <repo-folder>
+chown 1000:1000 data
+```
+
 ### - Start n8n
 ```bash
 docker compose up -d
