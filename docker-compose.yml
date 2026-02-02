@@ -7,6 +7,9 @@ services:
     environment:
       - GENERIC_TIMEZONE=America/New_York
       - TZ=America/New_York
+      # strongly recommended so it never needs to auto-generate/save
+      - N8N_ENCRYPTION_KEY= # strongly recommended so it never needs to auto-generate/save (command: openssl rand -hex 32)
+      - N8N_ENCRYPTION_KEY=061ce3f23bbe2da890a65ac23b2b8bf5e376b5aa913cb7a58284e0638059bdba
     volumes:
       # persistent data for workflows & credentials
       - ./data:/home/node/.n8n
